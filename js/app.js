@@ -67,6 +67,7 @@ function adicionar() {
     precoTotal += precoProduto * qtd;
 
     let carrinho = document.getElementById('lista-produtos');
+    
     carrinho.innerHTML += `<section class="carrinho__produtos__produto"> <span class="texto-azul">${qtd}x</span> ${nomeProduto} <span class="texto-azul">R$${precoProduto}</br></span></section>`;
 
     valor.innerHTML = `R$ ${precoTotal}`;
